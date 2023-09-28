@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        let num = prompt("Insira um dado:");
+
+
+let confirmar = confirm("Você deseja verificar o tipo do dado informado?");
+
+if (confirmar) {
+   
+    if (isNaN(num)) {
+        alert("O dado '" + num + "' é do tipo: string");
+    } else {
+        alert("O dado '" + num + "' é do tipo: number");
+    }
+} else {
+    alert("Obrigado por visitar a página.");
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

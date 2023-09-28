@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function calcularFatorial(num) {
+    if (num === 0 || num === 1) {
+        return 1;
+    } else {
+        return num * calcularFatorial(num - 1);
+    }
+}
+
+let inputNumero;
+do {
+    inputNumero = prompt("Digite um número inteiro e positivo:");
+} while (isNaN(inputNumero) || inputNumero < 0);
+
+let fatorial = calcularFatorial(inputNumero);
+alert("O fatorial de " + inputNumero + " é " + fatorial);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
